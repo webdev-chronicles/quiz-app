@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="myJson.js" defer></script>
+</head>
+<body>
+    <section id="whole-section">
+        <h1>welcome to the Quiz App</h1>
+        <p class="instructions">You will be asked 5 random questions about general culture, and at the end, you will get your final result and the level you currently are!</p>
+        <div class="q-wrap">
+            <div class="score"></div>
+            <div class="the-question"></div>
+            <div class="the-right-answer"></div>
+            <div class="four-answers">
+                <div class="ind-answer"></div>
+                <div class="ind-answer"></div>
+                <div class="ind-answer"></div>
+                <div class="ind-answer"></div>
+            </div>
+            <div class="controls">
+                <div class="start">start</div>
+                <div class="next">next question</div>
+                <div class="finish-game">get result</div>
+            </div>
+        </div>
+    </section>
+    <section id="post-game">
+        <h2 id="post-game-title">The quiz has finished!</h2>
+        <h3 id="ultimate-score"></h3>
+        <h3 id="knowledge-level"></h3>
+        <div class="new-round">start again</div>
+    </section>
+</body>
+</html>

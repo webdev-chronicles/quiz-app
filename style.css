@@ -1,0 +1,134 @@
+.next, #post-game, .finish-game, .score, .ind-answer{
+    display: none;
+}
+
+
+
+body{
+    background-color: rgb(48, 60, 71);
+    color: rgb(240, 244, 255);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#whole-section, #post-game{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em 0;
+    text-align: center;
+}
+
+#whole-section h1{
+    text-transform: capitalize;
+    font-size: 5rem;
+}
+
+#post-game-title{
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+
+#ultimate-score, #knowledge-level{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#whole-section p{
+    font-size: 1.3rem;
+}
+
+.start, .new-round{
+    display: inline-block;
+}
+
+.start, .finish-game, .new-round{
+    font-size: 1.3rem;
+    padding: 0.5em 3em;
+    background-color: rgb(240, 244, 255);
+    color: rgb(65, 60, 189);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.3em;
+    margin-right: -0.3em;
+    box-shadow: 1px 1px 20px rgb(65, 60, 189);
+}
+
+.start:hover, .finish-game:hover, .new-round:hover{
+    cursor: pointer;
+    animation: grow 1s forwards; 
+}
+
+@keyframes grow{
+    0% {
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.q-wrap{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.score{
+    margin-bottom: 2em;
+    text-align: left;
+}
+
+.the-question{
+    margin-bottom: 1em;
+}
+
+.score, .the-question{
+    font-size: 1.3rem;
+}
+
+.four-answers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-between;
+}
+
+.ind-answer{
+    margin: 0.5em 0.5em;
+    padding: 0.5em 2em;
+    background-color: rgb(161, 158, 186);
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.ind-answer:hover{
+    cursor: pointer;
+}
+
+.the-right-answer{
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.next{
+    padding: 0.5em 2em;
+    background-color: rgb(240, 244, 255);
+    margin-top: 2em;
+    color: rgb(65, 60, 189);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: inset 0 0 10px 0 rgb(65, 60, 189);
+    border: 2px solid rgb(65, 60, 189);
+}
+
+.next:hover{
+    cursor: pointer;
+    animation: bigger 0.5s forwards;
+}
+
+@keyframes bigger{
+    100%{
+        transform: scale(1.05);
+    }
+}
